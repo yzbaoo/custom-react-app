@@ -1,0 +1,4 @@
+{
+    // webpack 会自动执行 .babelrc 文件
+    "presets": ["@babel/env","@babel/react"], // 新版babel 8.x以上的写法
+  }

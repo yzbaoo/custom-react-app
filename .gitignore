@@ -1,0 +1,11 @@
+/node_modules
+/dist
+
+# misc
+.DS_Store
+
+# IDE #
+.idea/
+*.iml
+*.swp
+!/typings/custom.d.ts
