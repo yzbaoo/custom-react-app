@@ -1,4 +1,8 @@
 {
     // webpack 会自动执行 .babelrc 文件
-    "presets": ["@babel/env","@babel/react"], // 新版babel 8.x以上的写法
+    "presets": [ "@babel/preset-env","@babel/preset-react"], // 新版babel 8.x以上的写法
+    "plugins": [
+        "@babel/plugin-proposal-class-properties", // https://segmentfault.com/a/1190000016541105
+        "@babel/plugin-transform-runtime"
+          ]
   }
