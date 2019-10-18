@@ -63,8 +63,8 @@ module.exports = {
     devServer: {
         // 需要安装 webpack-dev-server npm install -D webpack-dev-server
         // 注意：安装完 webpack-dev-server，执行webpack-dev-server --open有可能会报错，此时有可能是webpack和webpack-dev-server版本不一致导致
-        // **坑** 在npm start时，修改的端口不生效，原因就是在start命令后没有指定 --config 的执行目录
-       port: 9999
+        // !!坑!! 在npm start时，自定义的端口不生效，原因就是在start命令后没有指定 --config 的执行目录
+       port: 3000
     },
     plugins: [
         new HtmlWebpackPlugin({
