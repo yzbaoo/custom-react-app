@@ -2,7 +2,8 @@
 从0搭建一个react项目
 
 todo：
- - 0.使用环境变量 
+- babel/css/less loader
+- 0.使用环境变量 
 - 1.react 👌
 - 2.typeScript
 - 3.router
