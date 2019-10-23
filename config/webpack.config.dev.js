@@ -26,7 +26,11 @@ module.exports = {
             enforce: 'pre',
             test: /\.(js|mjs|jsx|ts|tsx)$/,
             exclude: /node_modules/,
-            loader: 'eslint-loader'
+            loader: 'eslint-loader',
+            options: {
+                //在保存代码的时候，自动将抛出error的地方进行fix,这里辅助prettier使用，保存时按照prettier的格式修复
+                fix: true
+              }
         },{
             test: /\.(js|jsx)$/,
             loader: 'babel-loader',
