@@ -2,11 +2,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 class App extends React.Component {
     
     render() {
-        console.error(process.env);
         return (
             <div>
                 <h1>环境: {process.env.NODE_ENV}</h1>
@@ -15,5 +13,7 @@ class App extends React.Component {
         )
     }
 }
+
+export default App;
 
 ReactDOM.render(<App />,document.getElementById('root'));

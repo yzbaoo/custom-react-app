@@ -23,6 +23,11 @@ module.exports = {
      */
     module: {
         rules:[{
+            enforce: 'pre',
+            test: /\.(js|mjs|jsx|ts|tsx)$/,
+            exclude: /node_modules/,
+            loader: 'eslint-loader'
+        },{
             test: /\.(js|jsx)$/,
             loader: 'babel-loader',
             // include: 需要编译的目录
