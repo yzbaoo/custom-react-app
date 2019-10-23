@@ -50,7 +50,7 @@ todo：
 - 7.css_modules
 - 8.清理终端 Compiled successfully!
 - 11.ci/cd
-- 12.code splitting Loadable
+- 12.code splitting (use Loadable) + Router
 
 问题：
 
