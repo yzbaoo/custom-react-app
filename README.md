@@ -50,6 +50,7 @@ todo：
 - 7.css_modules
 - 8.清理终端 Compiled successfully!
 - 11.ci/cd
+- 12.code splitting (use Loadable) + Router
 
 问题：
 
@@ -62,5 +63,20 @@ todo：
 更多eslint注意的点：[https://blog.csdn.net/suwu150/article/details/78585609](https://blog.csdn.net/suwu150/article/details/78585609)
 [https://www.cnblogs.com/jiaoshou/p/11218526.html](https://www.cnblogs.com/jiaoshou/p/11218526.html)
 
-
-
+3.配置webpack的alias后，编辑器不能自动补全了
+答：
+```
+// 在根目录添加jsconfig.json
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "allowSyntheticDefaultImports": false,
+      "baseUrl": "./",
+      "paths": {
+        "@/*": ["src/*"]
+      }
+    },
+    "exclude": ["node_modules", "dist"],
+    "include": ["src"]
+  }
+```
